@@ -1,0 +1,10 @@
+export const white = '#ffffff';
+export const grey1 = '#dbdbdb';
+export const grey2 = '#F7F8FF';
+export const grey3 = '#F1F1F5';
+export const black = '#000000';
+export const red = '#FF4D52';
+export const orange = '#FFA700';
+export const green = '#1AC567';
+export const blue = '#188FFF';
+export const yellow = '#FFD333';
