@@ -21,7 +21,7 @@ class NewNote extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.heading}>New Note</Text>
+                {/*<Text style={styles.heading}>New Note</Text>*/}
                 <TextInput
                     placeholder={'Heading...'}
                     value={this.state.headingText}
@@ -42,7 +42,7 @@ class NewNote extends React.Component {
 
                 />
                 <TextInput
-                    placeholder={'Tags separated by spaces'}
+                    placeholder={'Enter tags separated by spaces'}
                     value={this.state.headingText}
                     style={styles.textField}
                     onChangeText={this.handleDescText}
