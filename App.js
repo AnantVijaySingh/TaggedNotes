@@ -4,13 +4,18 @@ import {createStackNavigator, createBottomTabNavigator} from 'react-navigation';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import {FontAwesome, Ionicons} from '@expo/vector-icons';
 import {Constants} from 'expo';
-
+import {createStore} from 'redux'
+import {Provider} from 'react-redux';
 
 //components
+import reducers from './reducers';
+import middleware from './middleware';
 import NewNote from './components/NewNote';
 import Search from './components/Search';
 import List from './components/List';
 import {black, grey2} from "./helpers/colors";
+
+const store = createStore(reducers, middleware);
 
 
 function TaggedNotesStatusBar({backgroundColor, ...props}) {
@@ -76,14 +81,21 @@ const TabsAndroid = createMaterialBottomTabNavigator({
 // );
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-          <TaggedNotesStatusBar backgroundColor={grey2} barStyle='light-content'/>
-          <TabsAndroid/>
-      </View>
-    );
-  }
+
+    componentDidMount() {
+        console.log('Main App Component Mounted')
+    }
+
+    render() {
+        return (
+            <Provider store={store}>
+                <View style={styles.container}>
+                    <TaggedNotesStatusBar backgroundColor={grey2} barStyle='light-content'/>
+                    <TabsAndroid/>
+                </View>
+            </Provider>
+        );
+    }
 }
 
 const styles = StyleSheet.create({

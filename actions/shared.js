@@ -2,13 +2,13 @@ import {getAllNotes} from "./notes";
 
 const sampleData = {
     notes: {
-        000000: {
+        A001: {
             heading: 'Get started',
             content: 'Create your first tagged note now and never forget an eureka moment',
             Timestamp: '16 August 2018',
             Tags: ['New', 'First', 'Note']
         },
-        000001: {
+        A002: {
             heading: 'Note 2',
             content: 'Create your first tagged note now and never forget an eureka moment',
             Timestamp: '17 August 2018',
@@ -26,6 +26,7 @@ const sampleData = {
 
 export function handleInitialData() {
     return (dispatch) => {
+        console.log('Step 1');
         return dispatch(getAllNotes(sampleData.notes))
     }
 }

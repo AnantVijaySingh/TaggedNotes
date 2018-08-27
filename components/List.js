@@ -1,8 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableNativeFeedback } from 'react-native';
 import {green, grey1, white} from "../helpers/colors";
+import {connect} from 'react-redux';
+import {handleInitialData} from "../actions/shared";
 
 class List extends React.Component {
+
+    componentDidMount() {
+        console.log('List Component Mounted');
+        this.props.dispatch(handleInitialData());
+    }
 
     state={
     };
@@ -30,5 +37,4 @@ const styles = StyleSheet.create({
     }
 });
 
-
-export default List;
+export default connect()(List);
