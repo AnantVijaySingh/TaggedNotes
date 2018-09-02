@@ -32,7 +32,14 @@ class List extends React.Component {
                             style={styles.note}
                             onPress={() => {} }
                         >
-                            <Text>{item['item']['heading']}</Text>
+                            <View>
+                                <Text>{item['item']['heading']}</Text>
+                            </View>
+                            <View>
+                                { item['item']['Tags'].map((item, key)=>(
+                                    <Text key={key}> { item } </Text>)
+                                )}
+                            </View>
                         </TouchableOpacity>
                     }
                 />

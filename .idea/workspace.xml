@@ -41,8 +41,8 @@
       <file leaf-file-name="List.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/components/List.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -184,7 +184,7 @@
       <updated>1534712260146</updated>
       <workItem from="1534712261725" duration="10362000" />
       <workItem from="1535329935936" duration="1055000" />
-      <workItem from="1535333378733" duration="5794000" />
+      <workItem from="1535333378733" duration="7639000" />
     </task>
     <task id="LOCAL-00001" summary="Project Setup using create-react-native-app">
       <created>1534712704085</created>
@@ -214,11 +214,18 @@
       <option name="project" value="LOCAL" />
       <updated>1535334627207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="List View&#10;- Data from Redux store&#10;- Flatlist to display all notes">
+      <created>1535420492884</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1535420492884</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17211000" />
+    <option name="totallyTimeSpent" value="19056000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -255,7 +262,8 @@
     <MESSAGE value="NewNote screen UI" />
     <MESSAGE value="TabNavigation for Android" />
     <MESSAGE value="Redux store and flow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redux store and flow" />
+    <MESSAGE value="List View&#10;- Data from Redux store&#10;- Flatlist to display all notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="List View&#10;- Data from Redux store&#10;- Flatlist to display all notes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/actions/shared.js">
@@ -367,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/List.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
