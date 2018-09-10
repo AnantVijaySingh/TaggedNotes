@@ -18,8 +18,6 @@ class List extends React.Component {
 
         const {notes} = this.props;
 
-        // console.log(notes);
-
         return (
             <View style={styles.container}>
                 <Text style={styles.heading}>Notes</Text>
